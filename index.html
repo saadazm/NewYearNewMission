@@ -16,8 +16,21 @@
                 width:100%;
                 height:auto;
             }
-            .footer{
-                background-color: #070211;
+            .offer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width:100%;
+                height:auto;
+            }
+            .party{
+                background-image: url("Vectorrr.png");
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width:100%;
+                height:auto;
             }
             .newsletter{
                 display: flex;
@@ -25,6 +38,8 @@
                 align-items: center;
                 width:100%;
                 height:auto;
+                background-color: #FF0000;
+                visibility: 5%;
             }
             .icons{
                 background-color: transparent;
@@ -32,6 +47,9 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
+            }
+            .footer{
+                background-color: #070211;
             }
         </style>
     </head>
@@ -41,11 +59,15 @@
 
         </div>
         <div class="offer">
-            <h1>65% OFF</h1>
+            <h1 style="color:red;">65% OFF</h1>
+            <p style="color:red;">OUR HOLIDAY DEALS ARE BETTER</p>
+            <h2>ALL CATEGORIES</h2>
             <img src = "New Year Photo.png">
         </div>
         <div class="party">
-
+            <div class="wT">
+                <h1>Welcome to midnight party</h1>
+            </div>
         </div>
         <div class="venue">
 
@@ -70,6 +92,11 @@
         <div class="newsletter">
             <img src = "Group 61.png">
             <h2>Subscribe Newsletter</h2>
+            <p>Enter your e-mail</p>
+            <div class="email">
+                <input type="email" placeholder="user@gmail.com">
+                <button>Subscribe</button>
+            </div>
         </div>
         <div class="footer">
             <div class="icons">
