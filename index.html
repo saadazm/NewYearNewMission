@@ -6,8 +6,7 @@
         <title>NewYearNewMission</title>
         <style>
             *{
-                align-items: center;
-                justify-content: center;
+
             }
             .banner{
                 display: flex;
@@ -35,31 +34,51 @@
                 height:auto;
                 text-align: center;
                 font-weight:bold;
-                
+            }
+            .newoffer{
+                display: grid;
+                grid-template-columns: auto auto auto; 
+                grid-template-rows: auto auto auto; 
+                padding:10px;
+            }
+            .best{
+                display: flex; 
+            }
+            .circle{
+                flex:auto;
+            }
+            .T24{
+
             }
             .holiday{
                 text-align: center;
+                padding-bottom: 1px;
             }
             .wT{
                 text-align: left;
-            }
+            } 
             .newsletter{
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                width:100%;
-                height:auto;
+                flex-direction: column; 
+                align-items: center;  
+                width:100%; 
+                height:auto; 
                 background-image: linear-gradient(red, rgb(255, 255, 255));
             }
             .icons{
                 background-color: transparent;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
+                display: flex; 
+                flex-direction: row; 
+                align-items: center; 
                 justify-content: center;
             }
             .footer{
                 background-color: #070211;
+            }
+            .portfolio{
+                display: grid;
+                margin-top: 5px; 
+                padding: 1px; 
             }
         </style>
     </head>
@@ -87,13 +106,19 @@
             <p>Date:31 December Night 2023</p>
         </div>
         <div class="newoffer">
-
+            <div class="best"></div>
+            <div class="circle"></div>
+            <div class="T24">
+                <h1>2024</h1>
+                <p>Watch for surprise</p>
+            </div>
         </div>
         <div class="holiday">
             <p>WHAT IS FUNCTIONAL</p>
             <h1>Holidays Sale 50%</h1>
             <p>Do shopping with eye catching discount in this holiday</p>
-            <p>Enjjojy flat 50% discount on every items and more discount on specific items</p>
+            <p>Enjojy flat 50% discount on every items and more discount on specific items</p>
+            <img src = "Rectangle 1.png" style="float:right">
         </div>
         <div class="portfolio">
             <div class="portfolioalbum">
@@ -112,7 +137,8 @@
             <p>Enter your e-mail</p>
             <div class="email">
                 <input type="email" placeholder="user@gmail.com">
-                <button>Subscribe</button>
+                <button style="background-color: red; color: white;">Subscribe</button>
+
             </div>
         </div>
         <div class="footer">
