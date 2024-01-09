@@ -8,6 +8,7 @@
             *{
                 margin:10px;
                 width 80%
+                max-width:1320px;
             }
             .banner{
                 display: flex;
@@ -23,6 +24,7 @@
                 font-size:40px;
             }
             .offer{
+                font-family: Arial, Helvetica, sans-serif;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -34,9 +36,8 @@
                 background-repeat: no-repeat;
                 color: white;
                 align-items: center;
-                vertical-align: bottom;
-	            width: 100%;
-                height: 400px;
+                width:1320px;
+                height:600px;
                 text-align: right;
                 padding-bottom: 10px;
             }
@@ -56,7 +57,7 @@
             }
             .best{
                 display: flex; 
-                flex-direction: row;
+                flex-direction: column;
             }
             .circle{
                 flex:auto;
@@ -67,6 +68,11 @@
             .holiday{
                 text-align: center;
                 padding: 10px 10px 10px 10px;
+                width:100%
+                height:auto;
+            }
+            .holidayimage{
+                display: flex;
             }
             .wT{
                 text-align: left;
@@ -75,11 +81,12 @@
             } 
             .newsletter{
                 display: flex;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 flex-direction: column; 
                 align-items: center;  
                 width:100%; 
                 height:auto; 
-                background-image: linear-gradient(red, rgb(255, 255, 255));
+                background-image: linear-gradient(rgb(255, 168, 168), rgb(255, 255, 255));
             }
             .icons{
                 background-color: transparent;
@@ -96,6 +103,12 @@
                 display: grid;
                 margin-top: 5px; 
                 padding: 1px; 
+            }
+            portfolioalbum{
+                display: grid;
+            }
+            .red{
+                color:red;
             }
         </style>
     </head>
@@ -121,12 +134,20 @@
         </div>
 
         <div class="venue">
-            <p>Place:New Park Hotel</p>
-            <p>Date:31 December Night 2023</p>
+            <p><span class="red">Place:</span>New Park Hotel</p>
+            <p><span class="red">Date:</span>31 December Night 2023</p>
+            <p><span class="red">Time:</span>evening 7:30pm to 12:30am</p>
+            <button style="color:white; background-color: red; border-color: transparent;">JOIN NOW</button>
         </div>
         <div class="newoffer">
-            <div class="best"></div>
-            <div class="circle"></div>
+            <div class="best">
+                <p>New Best Offer</p>
+                <h1>Coming Soon</h1>
+                <p>Get the best offers at best price</p>
+            </div>
+            <div class="circle">
+                <img src = "Ellipse 1.png">
+            </div>
             <div class="T24">
                 <h1>2024</h1>
                 <p>Watch for surprise</p>
@@ -137,9 +158,11 @@
             <h1>Holidays Sale 50%</h1>
             <p>Do shopping with eye catching discount in this holiday</p>
             <p>Enjojy flat 50% discount on every items and more discount on specific items</p>
-            <img src = "Group 75.png">
-            <img src = "Group 44.png">
-            <img src = "Rectangle 1.png">
+            <div class="holidayimage">
+                <img src = "Group 75.png">
+                <img src = "Group 44.png">
+                <img src = "Rectangle 1.png">
+            </div>
         </div>
         <div class="portfolio">
             <p style="color:red;">THE BEST GIFTS</p>
@@ -164,8 +187,12 @@
             </div>
         </div>
         <div class="footer">
-            <div class="address"></div>
-            <div class="contact"></div>
+            <div class="address" style="float:left;">
+                <p>44 Big Building. Roosevelt Street</p>
+            </div>
+            <div class="contact" style="float:right;">
+                <p>+00123584</p>
+            </div>
             <div class="icons">
                 <img src = "Facebook.png">
                 <img src = "Instagram.png">
@@ -173,7 +200,7 @@
                 <img src = "Linkedin.png">
             </div>
             <div class="rights"></div>
-            <button>Unsubscribe</button>
+            <button style="padding-right:px; ">Unsubscribe</button>
         </div>
     </body>
 </html>
